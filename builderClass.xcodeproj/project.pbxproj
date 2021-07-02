@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52CFEBBF268F55AA009E1118 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52CFEBBE268F55AA009E1118 /* main.cpp */; };
+		52CFEBCF268F5C60009E1118 /* MovieTypeBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52CFEBCD268F5C60009E1118 /* MovieTypeBuilder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,8 @@
 		52CFEBBB268F55AA009E1118 /* builderClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = builderClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CFEBBE268F55AA009E1118 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		52CFEBC6268F56C5009E1118 /* movie_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movie_data.h; sourceTree = "<group>"; };
-		52CFEBC8268F58B1009E1118 /* MovieType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieType.h; sourceTree = "<group>"; };
+		52CFEBCD268F5C60009E1118 /* MovieTypeBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MovieTypeBuilder.cpp; sourceTree = "<group>"; };
+		52CFEBCE268F5C60009E1118 /* MovieTypeBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieTypeBuilder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 		52CFEBBD268F55AA009E1118 /* builderClass */ = {
 			isa = PBXGroup;
 			children = (
-				52CFEBC7268F5875009E1118 /* Models */,
+				52CFEBC9268F5AD4009E1118 /* Builders */,
 				52CFEBC5268F569B009E1118 /* Data */,
 				52CFEBBE268F55AA009E1118 /* main.cpp */,
 			);
@@ -74,12 +76,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		52CFEBC7268F5875009E1118 /* Models */ = {
+		52CFEBC9268F5AD4009E1118 /* Builders */ = {
 			isa = PBXGroup;
 			children = (
-				52CFEBC8268F58B1009E1118 /* MovieType.h */,
+				52CFEBCD268F5C60009E1118 /* MovieTypeBuilder.cpp */,
+				52CFEBCE268F5C60009E1118 /* MovieTypeBuilder.h */,
 			);
-			path = Models;
+			path = Builders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CFEBCF268F5C60009E1118 /* MovieTypeBuilder.cpp in Sources */,
 				52CFEBBF268F55AA009E1118 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

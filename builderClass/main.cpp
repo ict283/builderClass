@@ -3,7 +3,7 @@
 #include <iostream>
 #include <list>
 #include "Data/movie_data.h"
-#include "Models/MovieType.h"
+#include "Builders/MovieTypeBuilder.h"
 
 using namespace std;
 
@@ -12,16 +12,11 @@ void print(MovieType& m);
 int main(void) {
 
         list<MovieType> movie_database;
+        MovieTypeBuilder m_builder;
     
 
         for(int i = 0; i<3; i++) {
-            
-            MovieType m;
-            m.title = t[i];
-            m.synopsis = s[i];
-            m.rating = r[i];
-            
-            movie_database.push_back(m);
+            movie_database.push_back(m_builder.build(t[i], s[i], r[i]));
         }
 
         for(MovieType m : movie_database) {
