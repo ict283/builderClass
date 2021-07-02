@@ -3,14 +3,9 @@
 #include <iostream>
 #include <list>
 #include "Data/movie_data.h"
+#include "Models/MovieType.h"
 
 using namespace std;
-
-struct MovieType {
-    string title;
-    string synopsis;
-    double rating;
-};
 
 void print(MovieType& m);
 
